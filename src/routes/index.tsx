@@ -1,5 +1,6 @@
 import RootLayout from "@/layouts/RootLayout";
 import HomePage from "@/pages/HomePage";
+import RegisterPage from "@/pages/RegisterPage";
 import RootErrorBoundary from "@/pages/RootErrorBoundary";
 import { createBrowserRouter } from "react-router-dom";
 import type { RouteObject } from "react-router-dom";
@@ -7,6 +8,10 @@ const rootRouteChildren: RouteObject[] = [
   {
     index: true,
     element: <HomePage></HomePage>,
+  },
+  {
+    path: "register",
+    element: <RegisterPage></RegisterPage>,
   },
 ];
 const router = createBrowserRouter([
