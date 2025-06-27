@@ -1,5 +1,5 @@
 import { useAuth } from "@clerk/clerk-react";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const AuthSyncPage = () => {
@@ -22,7 +22,7 @@ const AuthSyncPage = () => {
       localStorage.setItem("clerkUserId", userId);
       navigate("/app/today");
     }
-  }, [isLoaded, isSignedIn, userId]);
+  }, [isLoaded, isSignedIn, userId, navigate]);
   return <div>fdj</div>;
 };
 
