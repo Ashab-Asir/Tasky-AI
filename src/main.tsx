@@ -10,7 +10,7 @@ const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 const SIGN_IN_FORCE_REDIRCT_URL = import.meta.env
   .VITE_CLERK_SIGN_IN_FORCE_REDIRCT_URL;
 const SIGN_UP_FORCE_REDIRCT_URL = import.meta.env
-  .VITE_CLERK_SIGN_IN_FORCE_REDIRCT_URL;
+  .VITE_CLERK_SIGN_UP_FORCE_REDIRCT_URL;
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing publish key!");
 }

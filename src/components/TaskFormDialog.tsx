@@ -5,7 +5,7 @@ const TaskFormDialog: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent>
+      <DialogContent className="p-0 border-0 !rounded-xl">
         <TaskForm></TaskForm>
       </DialogContent>
     </Dialog>

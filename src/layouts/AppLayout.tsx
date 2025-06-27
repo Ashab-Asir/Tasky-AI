@@ -7,7 +7,6 @@ const AppLayout = () => {
     <SidebarProvider>
       <AppSidebar></AppSidebar>
       <SidebarTrigger></SidebarTrigger>
-      <div>app lay</div>
       <Outlet></Outlet>
     </SidebarProvider>
   );
