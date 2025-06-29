@@ -8,6 +8,7 @@ import RegisterPage from "@/pages/RegisterPage";
 import RootErrorBoundary from "@/pages/RootErrorBoundary";
 import { createBrowserRouter } from "react-router-dom";
 import type { RouteObject } from "react-router-dom";
+import appAction from "@/routes/actions/appActions";
 const rootRouteChildren: RouteObject[] = [
   {
     index: true,
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
     path: "/app",
     element: <AppLayout></AppLayout>,
     children: appRouteChildren,
+    action: appAction,
   },
 ]);
 export default router;

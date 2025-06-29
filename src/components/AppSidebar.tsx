@@ -24,6 +24,7 @@ import {
   CollapsibleTrigger,
 } from "./ui/collapsible";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import TaskFormDialog from "./TaskFormDialog";
 
 const AppSidebar = () => {
   return (
@@ -39,9 +40,11 @@ const AppSidebar = () => {
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
-                <SidebarMenuButton className="!text-primary">
-                  <CirclePlus></CirclePlus> Add Task
-                </SidebarMenuButton>
+                <TaskFormDialog>
+                  <SidebarMenuButton className="!text-primary">
+                    <CirclePlus></CirclePlus> Add Task
+                  </SidebarMenuButton>
+                </TaskFormDialog>
               </SidebarMenuItem>
               {SIDEBAR_LINKS.map((item, index) => (
                 <SidebarMenuItem key={index}>
