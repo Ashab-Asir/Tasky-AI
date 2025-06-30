@@ -100,6 +100,12 @@ const TaskForm: React.FC<TaskFormProps> = ({
           autoFocus
           value={taskContent}
           onInput={(e) => setTaskContent(e.currentTarget.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e?.preventDefault();
+              handleSubmit();
+            }
+          }}
         ></Textarea>
         <div className="ring-1 ring-border roundedmd max-w-max">
           <Popover open={dueDateOpen} onOpenChange={setDueDateOpen}>
